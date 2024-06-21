@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    color: rgb(0, 47, 255);
+    font-family: 'Courier New', Courier, monospace;
+
+}
+body{
+    background-color: bisque;
+    margin: 0px auto;
+}
+#guessnumber{
+    margin: left 50%;
+}
+#container{
+    margin-left: 40%;
+    margin-top: 10%;
+}
+#result1{
+    color: green;
+    font-size: 40px;
+}
+#result2{
+    color: red;
+    font-size: 40px;
+}
+#score{
+    color: rgb(174, 0, 255);
+    font-size: 40px;
+}
+#guessnumber{
+    size: 50%;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS THE NUMBER GAME</title>
+    <link rel="stylesheet"href="styles.css">
+</head>
+<body>
+    <h1>GUESS THE NUMBER BETWEEN 1 to 10</h1>
+<div id="container">
+<input id="guessnumber">
+<button onclick="check()">Check</button>
+<p id="result1"> </p>
+<p id="result2"></p>
+<p id="score"></p>
+<script>
+    
+   var guessnumber=document.getElementById("guessnumber")
+   var result1=document.getElementById("result1") 
+   var result2=document.getElementById("result2")
+   var score=document.getElementById("score")
+   var randomnumber=Math.floor(Math.random()*10)+1
+   var totalscore=10
+   console.log(randomnumber)
+
+   function check()
+   {
+        var enternum=guessnumber.value
+        if(randomnumber==enternum)
+        {
+            
+            result1.textContent="Right"
+            result2.textContent=" "
+            score.textContent="Score:"+totalscore
+            alert("YOU WON,Score:"+totalscore)
+
+        }
+        else
+        {
+            totalscore=totalscore-1
+            score.textContent="Score:"+totalscore
+            result1.textContent=" "
+            result2.textContent="Wrong"
+
+        }
+   }
+</script>
+</div>
+
+</body>
+</html>
+
+   
